@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<h1>Analizador Financiero PRO</h1>
+
+<h2>Manual</h2>
+<form action="/analisis" method="post">
+<input name="nopat" placeholder="NOPAT" required>
+<input name="capital" placeholder="Capital" required>
+<input name="flujo_operativo" placeholder="Flujo" required>
+<input name="capex" placeholder="CAPEX" required>
+<input name="costo_ventas" placeholder="Costo ventas" required>
+<input name="inventario" placeholder="Inventario" required>
+<input name="cxp" placeholder="CXP" required>
+<input name="compras" placeholder="Compras" required>
+<button>Analizar</button>
+</form>
+
+<h2>Subir Excel</h2>
+<form action="/excel" method="post" enctype="multipart/form-data">
+<input type="file" name="file" required>
+<button>Subir</button>
+</form>
+
+</body>
+</html>

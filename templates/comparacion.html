@@ -1,0 +1,13 @@
+<h1>Comparación</h1>
+<table border="1">
+<tr><th>Empresa</th><th>ROIC</th><th>Flujo</th><th>Días Inv</th></tr>
+{% for r in resultados %}
+<tr>
+<td>{{ r.empresa }}</td>
+<td>{{ r.roic }}</td>
+<td>{{ r.flujo }}</td>
+<td>{{ r.dias_inv }}</td>
+</tr>
+{% endfor %}
+</table>
+<a href="/">Volver</a>

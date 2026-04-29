@@ -1,0 +1,13 @@
+<h1>Resultado</h1>
+<p>ROIC: {{ roic }}</p>
+<p>Flujo: {{ flujo }}</p>
+<p>Días Inventario: {{ dias_inv }}</p>
+
+<h2>Recomendaciones</h2>
+<ul>
+{% for r in recomendaciones %}
+<li>{{ r }}</li>
+{% endfor %}
+</ul>
+
+<a href="/">Volver</a>
